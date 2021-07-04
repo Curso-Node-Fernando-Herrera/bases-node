@@ -2,7 +2,7 @@ const fs = require('fs')
 
 let tableValues = []
 
-const numericTable = async({ numTable = 1, multi = 1, limit = 10 } = {}) => {
+const numericTable = async({ numTable = 1, multi = 1, limit = 10, show = false } = {}) => {
 
   try {
 
@@ -11,13 +11,15 @@ const numericTable = async({ numTable = 1, multi = 1, limit = 10 } = {}) => {
       return `table-${numTable}.txt`
     }
   
-    console.log(`${numTable} x ${multi} = ${numTable * multi}`)
+    show && console.log(`${numTable} x ${multi} = ${numTable * multi}`)
+
     tableValues = [ ...tableValues, `${numTable} x ${multi} = ${numTable * multi}`]
     
     return numericTable({
       numTable,
       multi: multi + 1,
-      limit
+      limit,
+      show
     })
 
   } catch (err) {
