@@ -1,0 +1,36 @@
+{
+  "name": "bases-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest --watch --silent",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "commit": "git add . && cz && git push origin main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Curso-Node-Fernando-Herrera/bases-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Curso-Node-Fernando-Herrera/bases-node/issues"
+  },
+  "homepage": "https://github.com/Curso-Node-Fernando-Herrera/bases-node#readme",
+  "devDependencies": {
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.9"
+  },
+  "nodemonConfig": {
+    "ignore": ["test/*", "docs/*"],
+    "delay": 2500
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}
