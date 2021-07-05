@@ -2,7 +2,6 @@
 
 ```
 Opciones:
-Opciones:
       --help            Muestra ayuda                                 [booleano]
       --version         Muestra número de versión                     [booleano]
       --nt, --numTable  Numero de la tabla                [número] [defecto: 10]
