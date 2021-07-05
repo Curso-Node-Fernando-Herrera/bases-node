@@ -1,5 +1,4 @@
-const argv = require('yargs').argv
-require('./config/yargOptions').argv
+const argv = require('./config/yargOptions').argv
 require('colors')
 
 const { numericTable } = require('./helpers/numericTable')

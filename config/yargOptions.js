@@ -14,7 +14,7 @@ module.exports = argv.options({
     describe: 'Limite de la tabla'
   },
   'sh': {
-    alias: ['show', 'sh'],
+    alias: 'show',
     type: 'boolean',
     describe: 'Mostrar la tabla en consola',
     default: false
