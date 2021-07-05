@@ -1,4 +1,5 @@
 const fs = require('fs')
+const { handleShowTable } = require('./handleShowTable')
 
 let tableValues = []
 
@@ -11,7 +12,7 @@ const numericTable = async({ numTable = 1, multi = 1, limit = 10, show = false }
       return `table-${numTable}.txt`
     }
   
-    show && console.log(`${numTable} x ${multi} = ${numTable * multi}`)
+    show && handleShowTable({ numTable, multi })
 
     tableValues = [ ...tableValues, `${numTable} x ${multi} = ${numTable * multi}`]
     

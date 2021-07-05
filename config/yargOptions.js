@@ -5,20 +5,18 @@ module.exports = argv.options({
     alias: 'numTable',
     type: 'number',
     describe: 'Numero de la tabla',
-    demandOption: true,
+    default: 10
   },
   'l': {
     alias: 'limit',
     type: 'number',
-    demandOption: true,
     default: 10,
     describe: 'Limite de la tabla'
   },
   'sh': {
-    alias: 'show',
+    alias: ['show', 'sh'],
     type: 'boolean',
     describe: 'Mostrar la tabla en consola',
-    demandOption: true,
     default: false
   }
 
