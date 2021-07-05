@@ -8,7 +8,7 @@ const numericTable = async({ numTable = 1, multi = 1, limit = 10, show = false }
   try {
 
     if (multi === limit + 1) {
-      fs.writeFileSync(`table-${numTable}.txt`, tableValues.join('\n'))
+      fs.writeFileSync(`./public/table-${numTable}.txt`, tableValues.join('\n'))
       return `table-${numTable}.txt`
     }
   
